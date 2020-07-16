@@ -1,0 +1,128 @@
+
+/* line 77 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+
+/* line 1 : C:\Users\User\AppData\Local\Prepros\app-7.3.13\resources\app.asar\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 5 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+body {
+  font-size: font-family;
+}
+
+/* line 7 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+body :color,
+body background-color,
+body line-height:a,
+body color: #000,
+body:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 16 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+body:hover {
+  text-decoration: none;
+}
+
+/* line 18 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 21 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+button {
+  border: none;
+}
+
+/* line 23 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+section,
+header,
+footer {
+  width: 100%;
+  display: block;
+}
+
+/* line 28 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.video-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+/* line 34 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.video-wrapper:before {
+  content: '';
+  height: 0;
+  padding-top: 56.25%;
+  display: block;
+}
+
+/* line 39 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.video-wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+}
+
+/* line 48 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.video-wrapper img,
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #000;
+  border-radius: 0;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* line 63 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+/* line 70 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.button:focus {
+  text-decoration: none;
+color
+}
+
+/* line 73 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.button:hover {
+  text-decoration: none;
+color
+}
+
+/* line 76 : D:\OSPanel\domains\abramova\nsp-2.0\_app\styl\base\base.styl */
+.general-title {
+  text-align: center;
+}
