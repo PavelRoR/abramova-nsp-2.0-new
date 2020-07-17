@@ -1,0 +1,38 @@
+mixin for(cl,p)
+	.for(class=cl)
+		p.for-text=p
+
+section#for
+	.container
+		img.for-img.for-img-1(src=path+"img/images/laptop.png", alt="Картинка блока 1")
+		img.for-img.for-img-2(src=path+"img/images/branch.png", alt="Картинка блока 2")
+		img.for-img.for-img-3(src=path+"img/images/grass.png", alt="Картинка блока 3")
+		+gt('','Данный курс необходим для тех, кто хочет:')
+		.row
+			.col-md-6.col-sm-6
+				+for('','Освоить новейшие методы психотерапии, расширить границы своей практики')
+				hr.hr-mobile
+			.col-md-6.col-sm-6
+				+for('','Выйти на более высокий  уровень профессионализма и повысить эффективность работы с клиентами')
+				hr.hr-mobile
+		hr.hr-desktop
+		.row
+			.col-md-6.col-sm-6
+				+for('','Эффективно владеть инструментами исцеления любой проблематики людей')
+				hr.hr-mobile
+			.col-md-6.col-sm-6
+				+for('','Освоить техники и  практики по исцелению физических и психических недугов')
+				hr.hr-mobile
+		hr.hr-desktop
+		.row
+			.col-md-6.col-sm-6
+				+for('','Переквалифицироваться в специалиста по психологии, даже если у вас далёкое от этой сферы образование')
+				hr.hr-mobile
+			.col-md-6.col-sm-6
+				+for('','Понять, как можно менять собственную реальность и управлять собственной жизнью')
+				hr.hr-mobile
+		hr.hr-desktop
+		.row
+			.col-md-6.col-sm-6
+				+for('','Получить психологическое образование и продолжать развиваться в этом направлении')
+		+b('','#Modal','Мне это необходимо')

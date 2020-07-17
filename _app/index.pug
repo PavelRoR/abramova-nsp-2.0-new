@@ -14,6 +14,11 @@
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3,small)
+	h3.general-title(class=cl)=h3
+
 <!DOCTYPE html>
 html(lang="ru")
 	head

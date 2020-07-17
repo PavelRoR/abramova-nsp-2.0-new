@@ -1,0 +1,39 @@
+section#revs
+	.container
+		img.revs-img.revs-img-1(src=path+"img/images/ellipse.png", alt="Элипс")
+		img.revs-img.revs-img-2(src=path+"img/images/ellipse.png", alt="Элипс")
+		.row
+			.col-md-6
+				#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							.video-wrapper.video-wrapper-revs(data-youtube="nLoNlLUlC1U" data-img=path+"img/revs/video-1.jpg")
+								img(src=path+"img/revs/video-1.jpg", alt="Видео отзыв")
+						each n, index in {2: 'AXWKp131Lc4',3: 'QMaZsNzTLBw',5: 'B_NHWneVtJA',6: '23wuzK2PtHI',7: 'bk7BXao164g',8: '5kCyZIfkSp4',9: 'RsbQk2rJH1k',10: '7DeIMDUjejU'}
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube=n data-img=path+"img/revs/video-"+index+".jpg")
+									img(src=path+"img/revs/video-"+index+".jpg", alt="Видео отзыв " + index)
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#video-revs" data-slide-to="0")
+						each n in [1,2,3,5,6,7,8,9]
+							li( data-target="#video-revs" data-slide-to=n)
+					.controls.text-controls
+						a(class="left carousel-control" href="#video-revs" role="button" data-slide="prev") ‹
+						a(class="right carousel-control" href="#video-revs" role="button" data-slide="next") ›
+			.col-md-6
+				#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							a( href=path+"img/revs/text-1.jpg" data-fancybox="revs")
+								img.text-rev-img( src=path+"img/revs/text-1.jpg" alt="Отзыв 1")
+						each n in [2,3,4,5,6,7,8,9,10]
+							.item
+								a( href=path+"img/revs/text-"+n+".jpg" data-fancybox="revs")
+									img.text-rev-img( src=path+"img/revs/text-"+n+".jpg" alt="Отзыв " + n)
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#text-revs" data-slide-to="0")
+						each n in [1,2,3,4,5,6,7,8,9]
+							li( data-target="#text-revs" data-slide-to=n)
+					.controls.text-controls
+						a(class="left carousel-control" href="#text-revs" role="button" data-slide="prev") ‹
+						a(class="right carousel-control" href="#text-revs" role="button" data-slide="next") ›
