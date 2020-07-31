@@ -147,7 +147,18 @@ $(document).ready(function () {
         margin: 10,
         nav: true,
         navText: ["←", "→"],
-        dots: false
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            360: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
     $('.text-rev-link').magnificPopup({
         type: 'image',
