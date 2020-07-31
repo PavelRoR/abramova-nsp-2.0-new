@@ -1,0 +1,50 @@
+-var path = '../';
+-var head_url = 'https://iomp.ru/promo/';
+-var head_title = '«Новая системная психология-2.0»';
+-var head_description = 'Станьте психологом и научитесь работать с бессознательными ресурсами личности!';
+//- -var head_img = 'img/banner.jpg';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+
+-var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3,small)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/header
+				.row
+					.col-md-6
+						.video-wrapper.video-wrapper-main
+							iframe(src="https://youtube.com/embed/?autoplay=1&mute=1&modestbranding=1" allowfullscreen)
+					.col-md-6
+						h1.main-title Благодарим Вас за регистрацию на наш мастер-класс
+							br
+							| У нас к Вам просьба, прямо сейчас 
+							span подпишитесь на наш телеграм
+							| , там мы отправим Вам видео-урок "Название"
+							br
+							| Более того Вы сможете задать любой интересующий вас вопрос специалисту компании
+						h2.main-subtitle Нажимайте на кнопку ниже
+						a.button.button-promo(href="") Подписаться 
+							img(src=path+"img/icons/tg.png", alt="Telegram")
+				p.main-text Обратите внимание, если вы не увидели во входящих сообщениях письмо благодарность, то обязательно проверьте вкладку 
+					span спам
+					| , либо 
+					span промоакции
+				img.main-img(src=path+"img/images/main.png", alt="Картинка блока").mian-img
+		include pug/base/footer
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
