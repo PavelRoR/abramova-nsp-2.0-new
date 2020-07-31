@@ -1,6 +1,6 @@
 section#program
 	.container
-		img.program-img(src=path+"img/images/branch.png", alt="Ветка")
+		img.general-img.general-img-program(src=path+"img/images/branch.png", alt="Ветка")
 		+gt('','Программа презентации')
 		ul.nav.nav-tabs.program-links(role="tablist")
 			li(role="presentation" class="active")
@@ -15,64 +15,65 @@ section#program
 					h4.program-day-title Модели управления людьми
 					.row
 						.col-md-4.col-sm-4
-							p.program-day-text Типы моделей
+							.general-ul
+							p.general-ul-text Типы моделей
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Модели-связки с внутренними конфликтами, которые не дают двигаться к цели и получать желаемое
+							.general-ul
+								p.general-ul-text Модели-связки с внутренними конфликтами, которые не дают двигаться к цели и получать желаемое
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Теория конфликтов, травм, заболеваний. Таблица взаимосвязи прошлого
+							.general-ul
+								p.general-ul-text Теория конфликтов, травм, заболеваний. Таблица взаимосвязи прошлого
 							hr.hr-mobile
 					hr.hr-desktop
 					.row
 						.col-md-6.col-sm-6
-							p.program-day-text Опыта, текущих эмоций и будущих событий.Знакомство с модельными нарушениями и искажениями, формирующими конфликты, безденежье, заболевания
+							.general-ul
+							p.general-ul-text Опыта, текущих эмоций и будущих событий.Знакомство с модельными нарушениями и искажениями, формирующими конфликты, безденежье, заболевания
 							hr.hr-mobile
 					hr.hr-desktop
 					.program-day-bonus
-						.row
-							.col-md-6.col-sm-6
-								h5.program-day-bonus-title + Бонус
-							.col-md-6.col-sm-6
-								p.program-day-bonus-text Демо-сессия с одним из участников мастер-класса в прямом эфире по анализу любых личностных проблем по запросу (например, отношения, страхи, деструктивное состояние)
+						h5.program-day-bonus-title + Бонус
+						p.program-day-bonus-text Демо-сессия с одним из участников мастер-класса в прямом эфире по анализу любых личностных проблем по запросу (например, отношения, страхи, деструктивное состояние)
 			.tab-pane.tab-pane.fade(role="tabpanel")#program-day-2
 				.program-day
 					h4.program-day-title Этапы формирования судьбы
 					.row
 						.col-md-4.col-sm-4
-							p.program-day-text Поиск реперных (отправных) точек проблем и заболеваний
+							.program-day-text
+								p.general-ul-text Поиск реперных (отправных) точек проблем и заболеваний
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Нейтрализация зарядов в отправных точках проблематики в прямом эфире
+							.program-day-text
+								p.general-ul-text Нейтрализация зарядов в отправных точках проблематики в прямом эфире
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Таблица для работы с эмоциональным эквивалентом физических заболеваний
+							.program-day-text
+								p.general-ul-text Таблица для работы с эмоциональным эквивалентом физических заболеваний
 							hr.hr-mobile
 					hr.hr-desktop
 					.program-day-bonus
-						.row
-							.col-md-6.col-sm-6
-								h5.program-day-bonus-title + Бонус
-							.col-md-6.col-sm-6
-								p.program-day-bonus-text Демо-сессия с участниками мастер-класса по исцелению физического заболевания.
+						h5.program-day-bonus-title + Бонус
+						p.program-day-bonus-text Демо-сессия с участниками мастер-класса по исцелению физического заболевания
 			.tab-pane.tab-pane.fade(role="tabpanel")#program-day-3
 				.program-day
 					h4.program-day-title Терапия в действии
 					.row
 						.col-md-4.col-sm-4
-							p.program-day-text Работа с внутренним эмоциональным конфликтом, формирующем проблемы с деньгами и собственной реализацией (предназначением)
+							.program-day-text
+								p.general-ul-text Работа с внутренним эмоциональным конфликтом, формирующем проблемы с деньгами и собственной реализацией (предназначением)
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Финансовые вопросы с точки зрения НЛП терапии
+							.program-day-text
+								p.general-ul-text Финансовые вопросы с точки зрения НЛП терапии
 							hr.hr-mobile
 						.col-md-4.col-sm-4
-							p.program-day-text Работа с техниками НЛП терапии
+							.program-day-text
+								p.general-ul-text Работа с техниками НЛП терапии
 							hr.hr-mobile
 					hr.hr-desktop
 					.program-day-bonus
-						.row
-							.col-md-6.col-sm-6
-								h5.program-day-bonus-title + Бонус
-							.col-md-6.col-sm-6
-								p.program-day-bonus-text Демо-сессия с участниками мастер-класса по решению проблем с финансами.
-		+b('','#Modal','Записаться на презентацию')
+						h5.program-day-bonus-title + Бонус
+						p.program-day-bonus-text Демо-сессия с участниками мастер-класса по решению проблем с финансами
+		+b('button-program','#Modal','Записаться на презентацию')

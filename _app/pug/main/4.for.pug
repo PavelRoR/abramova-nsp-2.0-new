@@ -1,12 +1,12 @@
 mixin for(cl,p)
-	.for(class=cl)
-		p.for-text=p
+	.general-ul(class=cl)
+		p.general-ul-text=p
 
 section#for
 	.container
-		img.for-img.for-img-1(src=path+"img/images/laptop.png", alt="Картинка блока 1")
-		img.for-img.for-img-2(src=path+"img/images/branch.png", alt="Картинка блока 2")
-		img.for-img.for-img-3(src=path+"img/images/grass.png", alt="Картинка блока 3")
+		img.general-img.general-img-for-1(src=path+"img/images/laptop.png", alt="Картинка блока 1")
+		img.general-img.general-img-for-2(src=path+"img/images/branch.png", alt="Картинка блока 2")
+		img.general-img.general-img-for-3(src=path+"img/images/grass.png", alt="Картинка блока 3")
 		+gt('','Данный курс необходим для тех, кто хочет:')
 		.row
 			.col-md-6.col-sm-6
@@ -35,4 +35,4 @@ section#for
 		.row
 			.col-md-6.col-sm-6
 				+for('','Получить психологическое образование и продолжать развиваться в этом направлении')
-		+b('','#Modal','Мне это необходимо')
+		+b('button-for','#Modal','Мне это необходимо')

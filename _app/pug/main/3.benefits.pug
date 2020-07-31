@@ -1,13 +1,15 @@
 section#name-title
+	img(src="img/icons/title.png", alt="").name-title-img
 
 mixin ben(cl,h4,p)
-	.benefit(class=cl)
-		h4.benefit-title=h4
-		p.benefit-text=p
+	.general-ol(class=cl)
+		h4.general-ol-title=h4
+		p.general-ol-text=p
 
 section#benefits
 	.container
-		img(src=path+"img/images/grass.png", alt="Трава")
+		img(src=path+"img/images/grass.png", alt="Трава").general-img.general-img-benefits-1
+		img(src=path+"img/images/ellipse.png", alt="Трава").general-img.general-img-benefits-2
 		+gt('','Преимущества обучения')
 		.row
 			.col-md-4.col-sm-4

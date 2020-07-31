@@ -1,11 +1,11 @@
 mixin use(cl,h4,p)
-	.usefull-item(class=cl)
-		h4.usefull-item-title=h4
-		p.usefull-item-text=p
+	.general-ol(class=cl)
+		h4.general-ol-title=h4
+		p.general-ol-text=p
 
 section#usefull
 	.container
-		img.for-img.for-img-1(src=path+"img/images/laptop.png", alt="Картинка блока 1")
+		img.general-img.general-img-usefull(src=path+"img/images/laptop.png", alt="Картинка блока 1")
 		+gt('','Польза от участия в онлайн-презентации:')
 		.row
 			.col-md-6.col-sm-6
@@ -33,14 +33,14 @@ section#usefull
 		hr.hr-desktop
 		.row
 			.col-md-6.col-sm-6
-				.usefull-item
-					h4.usefull-item-title 7
-					p.usefull-item-text Освоите актуальные эффективные техники:
-					ul.use-item-list
-						li По работе с внутренними эмоциональными конфликтами, работе с субличностями (кто мне не дает реализовывать собственные задачи)
-						li По работе с физическими заболеваниями (какова психосоматическая причина физических недугов)
-						li По работе с финансовыми вопросами (в чём основная проблема финансовых неудач)
+				.general-ol
+					h4.general-ol-title 7
+					p.general-ol-text Освоите актуальные эффективные техники:
+				ul.use-item-list
+					li По работе с внутренними эмоциональными конфликтами, работе с субличностями (кто мне не дает реализовывать собственные задачи)
+					li По работе с физическими заболеваниями (какова психосоматическая причина физических недугов)
+					li По работе с финансовыми вопросами (в чём основная проблема финансовых неудач)
 					hr.hr-mobile
 			.col-md-6.col-sm-6
 				+use('','8','На онлайн-презентации получите уникальную подборку техник и материалов, важных для современного психолога')
-		+b('','#Modal','Мне это необходимо')
+		+b('button-usefull','#Modal','Мне это необходимо')

@@ -13,6 +13,7 @@
 -var formVc = '';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
+-var href = '#Modal'
 
 mixin b(cl,href,p,target,id)
 	a.button.button-up(class=cl href=href target=target id=id)=p
@@ -38,6 +39,7 @@ html(lang="ru")
 		include pug/main/10.author.pug
 		include pug/main/11.revs.pug
 		include pug/main/12.last.pug
+		include pug/base/footer
 		include pug/main/13.modal.pug
 		include pug/base/scripts
 		//- include pug/scripts/chat

@@ -4,11 +4,11 @@
 	outline none
 body
 	font-size:  17px
-	font-family: SUD 
+	font-family: SUD L
+	font-weight: 300
 	color cBk
 	background-color #fff
-	line-height: 150%
-	font-weight: 300
+	line-height: 25px
 a
 	color: #000
 	&:focus
@@ -61,6 +61,9 @@ footer
 		bottom 0
 		cursor pointer
 		margin 0 auto
+.container
+	position relative
+	z-index 10
 .button
 	display block
 	text-align center
@@ -73,6 +76,7 @@ footer
 	font-size: 24px;
 	background: #9084FF;
 	border-radius: 100px;
+	transition: all .3s ease-out
 	&:focus
 		text-decoration none
 		color #fff
@@ -81,9 +85,62 @@ footer
 		background-color: #7A6AFF
 		color #fff
 .general-title
+	font-family: SUDH
 	font-weight: 800;
 	font-size: 36px;
 	line-height: 43px;
-	margin-bottom: 80px
+	margin-bottom: 30px
+hr
+	height 2px
+	border-top:  2px solid cC
+.general-img
+	position: absolute
+	z-index -1
+.hr-desktop
+	margin 40px 0
 .hr-mobile
 	display none
+.general-text
+	margin-bottom: 20px
+	&:last-of-type
+		margin-bottom: 0
+	span
+		color cB
+.general-ol
+	display table
+	width 100%
+	&-title
+		display table-cell
+		vertical-align top
+		font-size: 36px
+		font-family: SUDH
+		font-weight: 800
+		color cB
+		line-height: 54px
+	&-text
+		display table-cell
+		vertical-align middle
+		font-size: 18px
+		padding-left: 20px
+		line-height: 24px
+		width 100%
+	&-2
+		.general-ol-title
+			font-size: 24px
+			font-family: SUDL
+			font-weight: 300
+			line-height: 24px
+.general-ul
+	&-text
+		position relative
+		padding-left: 35px
+		&:before
+			content ''
+			display block
+			position absolute
+			top 5px
+			left 0
+			width 15px
+			height 15px
+			border-radius: 50px
+			background-color: cB

@@ -1,0 +1,140 @@
+#skills
+	padding 90px 0
+	overflow hidden
+.general-img-skills-1
+	top -90px
+	right: -440px
+.general-img-skills-2
+	top 160px
+	left: -765px
+.general-img-skills-3
+	top 460px
+	right: -765px
+.general-img-skills-4
+	bottom -90px
+	left: -405px
+.skills
+	margin-top: 100px
+	// overflow hidden
+.skill-row
+	position relative
+	// background-color #fff
+	width: 90%
+	&-title
+		font-size: 96px
+		color: #7A5BF5;
+		text-decoration underline
+		padding 5px 50px
+		background-color #fff
+		display inline-block
+		line-height: 106px
+		position absolute
+		z-index 20
+	&-text
+		position absolute
+		display inline-block
+		border-radius: 100px;
+		text-align center
+		padding 20px 50px
+		border: 1px solid #7A5BF5;
+		z-index 20
+		&-blue
+			background-color: #7A5BF5;
+			color #fff
+		&-white
+			background-color #fff
+			color #7A5BF5;
+	&:nth-of-type(odd)
+		border: 1px solid #000000;
+		border-left-color: transparent
+		height 200px
+		border-radius: 0 1000px 1000px 0
+		float right
+	&:nth-of-type(even)
+		border: 1px solid #000000;
+		border-right-color: transparent
+		height 200px
+		border-radius: 1000px 0 0 1000px
+		float: left
+	&-1
+		.skill-row-title
+			top -59px
+			left -140px
+		.skill-row-text
+			top -46px
+			right: 150px
+	&-2
+		top -1px
+		.skill-row-text-white
+			top -34px
+			right: 100px
+		.skill-row-text-blue
+			top -34px
+			left 190px
+	&-3
+		top -2px
+		.skill-row-title
+			top -61px
+			left -140px
+		.skill-row-text
+			top -34px
+			right: 180px
+	&-4
+		top -3px
+		.skill-row-text-white
+			top -34px
+			right: -20px
+		.skill-row-text-blue
+			top -34px
+			left 70px
+	&-5
+		top -4px
+		.skill-row-text-white
+			top -35px
+			left 40px
+		.skill-row-text-blue
+			top -35px
+			right: 180px
+	&-6
+		top -5px
+		&:before
+			content: ''
+			display block
+			position absolute
+			width 650px
+			height 100px
+			background-color #fff
+			right 0
+			bottom: -12px
+		.skill-row-title
+			top -62px
+			right -140px
+		.skill-row-text
+			top -72px
+			left: 80px
+			width 100%
+			max-width 445px
+			&-blue
+				top auto
+				bottom:  -33px
+				left 130px
+				max-width 300px
+
+	&:nth-of-type(7)
+		top -6px
+		width 40%
+		float left 
+		margin-left: 100px
+.skill-row-aftertitle
+	text-align center
+	color: #7A5BF5;
+	font-size: 62px
+	line-height: 76px
+	text-decoration underline
+	padding: 50px 10px 10px
+	background-color #fff
+	position absolute
+	z-index 50
+	left 0
+	right 0
+	bottom: 0
