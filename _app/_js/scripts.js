@@ -7,22 +7,22 @@
 
 $(document).ready(function () {
     $(function () {
-        var img1 = $('.main-img-1');
-        window.addEventListener('mousemove', function (e) {
-            let x = e.clientX / window.innerWidth;
-            let y = e.clientY / window.innerHeight;
-            img1.css('transform', 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)');
-        });
+        // var img1 = $('.main-img-1');
+        // window.addEventListener('mousemove', function (e) {
+        //     let x = e.clientX / window.innerWidth;
+        //     let y = e.clientY / window.innerHeight;
+        //     img1.css('transform', 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)');
+        // });
         var img2 = $('.main-img-2');
         window.addEventListener('mousemove', function (e) {
-            let x = e.clientX / window.innerWidth;
-            let y = e.clientY / window.innerHeight;
-            img2.css('transform', 'translate(-' + x * 40 + 'px, -' + y * 40 + 'px)');
+            var x = e.clientX / window.innerWidth;
+            var y = e.clientY / window.innerHeight;
+            img2.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
         });
         var img3 = $('.main-img-3');
         window.addEventListener('mousemove', function (e) {
-            let x = e.clientX / window.innerWidth;
-            let y = e.clientY / window.innerHeight;
+            var x = e.clientX / window.innerWidth;
+            var y = e.clientY / window.innerHeight;
             img3.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         });
     });

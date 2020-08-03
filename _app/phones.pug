@@ -1,0 +1,62 @@
+-var path = '../';
+-var head_url = 'https://iomp.ru/phones/';
+-var head_title = 'Оставьте свои данные, чтобы скачать учебное пособие и завершить регистрацию';
+-var styles = '../css/phones.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+-var scripts = path+'js/phones.min.js';
+-var action = '';
+//- -var group = '';
+-var formId = '';
+-var formVc = '';
+-var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var href = '#Modal';
+
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class= cl)= h3
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				img.main-img.main-img-1(src=path+"img/images/branch.png", alt="Ноутбук")
+				img.main-img.main-img-2(src=path+"img/images/laptop.png", alt="Ветки")
+				include pug/base/header
+				h1.main-title Оставьте свои данные, чтобы завершить регистрацию и учебное пособие. Оно поможет вам максимально эффективно работать на занятиях
+				p.main-text Обратите внимание, если вы не увидели во входящих сообщениях письмо благодарность, то обязательно проверьте вкладку 
+					span спам
+					| , либо 
+					span промоакции
+				form(action=action method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
+					.inputrow
+						.inputblock
+							input(type="hidden" value="1" name="required_fields[phone_number]")
+							input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
+					button(type="submit").button.button-form Получить пособие
+						br
+						| и завершить регистрацию
+					.clearfix
+					p.alert-message
+					.checking
+						input(type="checkbox" id="check" checked).check
+						label(for="check").check-label Я согласен с 
+							a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
+							|  персональных данных по 152 - Ф3
+					div(style="display: none;")
+						div#formTypeSpecificVars(style="display: none;")
+						<!-- API код канала рекламы --> 
+						input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")#form_newsletter_id_advertising_channel_page
+						input(type="hidden" name="formId" value=formId)
+						input(type="hidden" name="formVc" value=formVc)
+				.clearfix
+		include pug/base/footer
+		include pug/base/scripts
+		include pug/scripts/body_bottom_scripts

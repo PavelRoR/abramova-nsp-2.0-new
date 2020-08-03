@@ -1,0 +1,27 @@
+-var path = '../';
+-var head_title = 'Вы зарегистрированы на мастер-класс «Новая системная психология-2.0»';
+-var styles = '../css/phones.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+-var scripts = path+'js/phones.min.js';
+-var footer_title = true
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/header
+				h1.main-title Вы зарегистрированы на мастер-класс 
+					span «Новая системная психология-2.0»
+				h2.main-text Скачайте учебное пособие по ссылке ниже:
+				a.button.button-thanks(href='https://drive.google.com/file/d/1utwSn4h4U7SGskbUgPyihMxwM4n91H05/view?usp=sharing' target="_blank") Скачать пособие
+			#divider
+				img(src=path+"img/images/divider.png", alt="Эллипс").main-img-3
+		include pug/base/footer
+		include pug/base/scripts
+		include pug/scripts/body_bottom_scripts
