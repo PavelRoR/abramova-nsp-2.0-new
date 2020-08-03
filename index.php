@@ -1,3 +1,4 @@
+<?php require_once('date/date.php');?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -41,7 +42,7 @@
             <hr/>
             <h2 class="main-subtitle">Комплексная программа профессиональной переподготовки начинающих и практикующих психологов по специальности «Специалист системной психологии» с выдачей диплома государственного образца</h2>
             <div class="main-info">
-              <p class="main-info-text">Даты проведения презентации:<span>с 5 по 7 июня 19:00 (Мск)</span></p>
+              <p class="main-info-text">Даты проведения презентации:<span>с <?= $dateDay1Text;?> <?= $dateMonthTextP;?> по <?= $dateDay2Text;?> <?= $dateMonthText;?> 19:00 (Мск)</span></p>
               <p class="main-info-text">Автор курса:<span>Жанна Абрамова</span></p>
             </div>
             <form class="form form-main" action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru&amp;Contact[id_newsletter]=1527" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
@@ -815,7 +816,8 @@
         </div>
       </form>
     </div>
-    <script src="js/scripts.min.js"></script><!-- AutoWebOffice: UTM or OpenStat Counter -->
+    <script src="js/scripts.min.js"></script><!-- BEGIN JIVOSITE CODE {literal} -->
+    <script src="//code.jivosite.com/widget.js" data-jv-id="UPm98E8VpR" async="async"></script><!-- {/literal} END JIVOSITE CODE --><!-- AutoWebOffice: UTM or OpenStat Counter -->
     <script type="text/javascript">var url = "https://shop.mastervision.su/?r=api/utmopenstat";</script>
     <script type="text/javascript" src="https://shop.mastervision.su/js/utm_openstat.js" defer="defer"></script><!-- /AutoWebOffice: UTM or OpenStat Counter -->
   </body>

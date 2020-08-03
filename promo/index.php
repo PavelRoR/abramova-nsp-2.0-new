@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device=width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://iomp.ru/promo/"/>
-    <meta property="og:title" content="«Новая системная психология-2.0»"/>
-    <meta property="og:description" content="Станьте психологом и научитесь работать с бессознательными ресурсами личности!"/>
-    <title>«Новая системная психология-2.0». Станьте психологом и научитесь работать с бессознательными ресурсами личности!</title>
+    <meta property="og:url" content="https://iomp.ru/promo/index.php"/>
+    <meta property="og:title" content="«Благодарим Вас за регистрацию на наш мастер-класс»"/>
+    <meta property="og:description" content="Подпишитесь на наш телеграм, там мы отправим Вам видео-урок"/>
+    <title>Благодарим Вас за регистрацию на наш мастер-класс. Подпишитесь на наш телеграм, там мы отправим Вам видео-урок</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.png"/>
     <link rel="stylesheet" href="../css/promo.min.css"/>
